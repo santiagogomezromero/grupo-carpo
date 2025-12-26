@@ -14,9 +14,9 @@ export default function Home() {
     <Layout>
       {/* Hero Section */}
       <section className="relative bg-zinc-900 text-white overflow-hidden">
-        {/* Abstract shapes/gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-r from-zinc-900 via-zinc-800 to-primary/20" />
-        <div className="absolute right-0 top-0 w-1/2 h-full bg-[url('https://images.unsplash.com/photo-1556910103-1c02745a30bf?auto=format&fit=crop&q=80&w=1000')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+        {/* Background image with overlay */}
+        <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('/attached_assets/Fondo_web_Grupo_Carpo_1766787303047.png')"}}></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/90 via-zinc-800/80 to-primary/30" />
         
         <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
           <div className="max-w-2xl animate-in slide-in-from-left duration-700">

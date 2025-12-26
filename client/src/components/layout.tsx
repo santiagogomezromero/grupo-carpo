@@ -43,10 +43,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </Sheet>
 
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="relative w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground shadow-sm group-hover:scale-105 transition-transform">
-                <span className="font-heading font-black text-xl">C</span>
-                <div className="absolute -top-1 -right-1 bg-yellow-400 w-4 h-4 rounded-full border-2 border-white"></div>
-              </div>
+              <img 
+                src="/attached_assets/Logo_Grupo_Carpo_1766787303048.png" 
+                alt="Grupo Carpo Logo"
+                className="h-10 w-auto group-hover:scale-105 transition-transform"
+              />
               <span className="font-heading font-bold text-lg md:text-xl tracking-tight hidden sm:block">
                 Grupo <span className="text-primary">Carpo</span>
               </span>
@@ -114,10 +115,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground">
-                <span className="font-heading font-bold">C</span>
-              </div>
-              <span className="font-heading font-bold text-lg">Grupo Carpo</span>
+              <img 
+                src="/attached_assets/Logo_Grupo_Carpo_1766787303048.png" 
+                alt="Grupo Carpo Logo"
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-zinc-400 text-sm max-w-xs">
               Tu aliado #1 de Insumos Gastronómicos. Calidad y servicio para tu negocio.
