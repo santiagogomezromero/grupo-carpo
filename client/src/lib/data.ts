@@ -1,3 +1,5 @@
+import { productImages } from './product-images';
+
 export const CATEGORIES = [
   { id: 'heladeria', name: 'Heladería', icon: 'IceCream' },
   { id: 'confiteria', name: 'Confitería', icon: 'Candy' },
@@ -21,7 +23,7 @@ export const PRODUCTS = [
     category: 'heladeria',
     price: 15000,
     unit: 'Litro',
-    image: '/attached_assets/stock_images/vanilla_ice_cream_ba_8397606d.jpg',
+    image: productImages.vanilla_ice_cream,
     description: 'Base cremosa lista para preparar helado soft o artesanal.'
   },
   {
@@ -30,7 +32,7 @@ export const PRODUCTS = [
     category: 'heladeria',
     price: 12000,
     unit: 'Caja x 12',
-    image: '/attached_assets/stock_images/waffle_cone_ice_crea_609a4ff8.jpg'
+    image: productImages.waffle_cone
   },
   // Confitería
   {
@@ -39,7 +41,7 @@ export const PRODUCTS = [
     category: 'confiteria',
     price: 8500,
     unit: '500g',
-    image: '/attached_assets/stock_images/chocolate_chips_coco_9dc70ee2.jpg'
+    image: productImages.chocolate_chips
   },
   {
     id: '4',
@@ -47,7 +49,7 @@ export const PRODUCTS = [
     category: 'confiteria',
     price: 6000,
     unit: 'Paquete',
-    image: '/attached_assets/stock_images/gummy_bears_candy_sw_c13b45a7.jpg'
+    image: productImages.gummy_bears
   },
   // Aceites
   {
@@ -56,7 +58,7 @@ export const PRODUCTS = [
     category: 'aceites',
     price: 25000,
     unit: '3 Litros',
-    image: '/attached_assets/stock_images/vegetable_oil_bottle_1e8c9994.jpg'
+    image: productImages.vegetable_oil
   },
   // Panes
   {
@@ -65,7 +67,7 @@ export const PRODUCTS = [
     category: 'panes',
     price: 9000,
     unit: 'Paquete x 6',
-    image: '/attached_assets/stock_images/hamburger_buns_bread_53862365.jpg'
+    image: productImages.hamburger_buns
   },
   {
     id: '7',
@@ -73,7 +75,7 @@ export const PRODUCTS = [
     category: 'panes',
     price: 7500,
     unit: 'Paquete x 8',
-    image: '/attached_assets/stock_images/hot_dog_buns_bread_ef246918.jpg'
+    image: productImages.hot_dog_buns
   },
   // Lácteos
   {
@@ -82,7 +84,7 @@ export const PRODUCTS = [
     category: 'lacteos',
     price: 32000,
     unit: 'Kg',
-    image: '/attached_assets/stock_images/mozzarella_cheese_bl_1be2bd60.jpg'
+    image: productImages.mozzarella_cheese
   },
   // Pollo
   {
