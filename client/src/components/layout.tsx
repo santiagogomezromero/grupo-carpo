@@ -1,6 +1,7 @@
 import { Link, useLocation } from "wouter";
-import { Search, ShoppingCart, Menu, X, Facebook, Instagram } from "lucide-react";
+import { Search, ShoppingCart, Menu, X, Facebook, Instagram, Settings } from "lucide-react";
 import { useCart } from "@/lib/store";
+import { useAuth } from "@/lib/auth";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -9,6 +10,7 @@ import { useState } from "react";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const cartCount = useCart((state) => state.itemCount());
+  const isAuthenticated = useAuth((state) => state.isAuthenticated);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [location] = useLocation();
 
@@ -65,6 +67,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Cart & Actions */}
           <div className="flex items-center gap-2">
+            {!isAuthenticated ? (
+              <Link href="/login">
+                <Button variant="ghost" size="icon" className="relative hover:bg-secondary rounded-full w-10 h-10">
+                  <Settings className="h-5 w-5" />
+                </Button>
+              </Link>
+            ) : (
+              <Link href="/admin">
+                <Button variant="ghost" size="icon" className="relative hover:bg-secondary rounded-full w-10 h-10 bg-primary/10 text-primary">
+                  <Settings className="h-5 w-5" />
+                </Button>
+              </Link>
+            )}
             <CartDrawer>
               <Button variant="ghost" size="icon" className="relative hover:bg-secondary rounded-full w-10 h-10">
                 <ShoppingCart className="h-5 w-5" />
