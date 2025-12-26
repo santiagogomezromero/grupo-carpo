@@ -43,15 +43,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
               </SheetContent>
             </Sheet>
 
-            <Link href="/" className="flex items-center gap-2 group">
+            <Link href="/" className="flex items-center group">
               <img 
                 src={logoUrl}
                 alt="Grupo Carpo Logo"
-                className="h-10 w-auto group-hover:scale-105 transition-transform"
+                className="h-16 w-auto group-hover:scale-110 transition-transform"
               />
-              <span className="font-heading font-bold text-lg md:text-xl tracking-tight hidden sm:block">
-                Grupo <span className="text-primary">Carpo</span>
-              </span>
             </Link>
           </div>
 
