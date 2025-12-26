@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout";
 import { CategoryRail } from "@/components/category-rail";
 import { ProductCard } from "@/components/product-card";
 import { PRODUCTS } from "@/lib/data";
+import { fondoUrl } from "@/lib/assets";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, Truck, ShieldCheck } from "lucide-react";
 import { Link } from "wouter";
@@ -15,7 +16,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-zinc-900 text-white overflow-hidden">
         {/* Background image with overlay */}
-        <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('/attached_assets/Fondo_web_Grupo_Carpo_1766787303047.png')"}}></div>
+        <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: `url(${fondoUrl})`}}></div>
         <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/90 via-zinc-800/80 to-primary/30" />
         
         <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">

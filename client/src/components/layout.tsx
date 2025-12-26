@@ -2,6 +2,7 @@ import { Link, useLocation } from "wouter";
 import { Search, ShoppingCart, Menu, X, Facebook, Instagram, Settings } from "lucide-react";
 import { useCart } from "@/lib/store";
 import { useAuth } from "@/lib/auth";
+import { logoUrl } from "@/lib/assets";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -44,7 +45,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
             <Link href="/" className="flex items-center gap-2 group">
               <img 
-                src="/attached_assets/Logo_Grupo_Carpo_1766787303048.png" 
+                src={logoUrl}
                 alt="Grupo Carpo Logo"
                 className="h-10 w-auto group-hover:scale-105 transition-transform"
               />
@@ -116,7 +117,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img 
-                src="/attached_assets/Logo_Grupo_Carpo_1766787303048.png" 
+                src={logoUrl}
                 alt="Grupo Carpo Logo"
                 className="h-10 w-auto"
               />
