@@ -21,7 +21,7 @@ export const PRODUCTS = [
     category: 'heladeria',
     price: 15000,
     unit: 'Litro',
-    image: 'https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&q=80&w=400',
+    image: '/attached_assets/stock_images/vanilla_ice_cream_ba_8397606d.jpg',
     description: 'Base cremosa lista para preparar helado soft o artesanal.'
   },
   {
@@ -30,7 +30,7 @@ export const PRODUCTS = [
     category: 'heladeria',
     price: 12000,
     unit: 'Caja x 12',
-    image: 'https://images.unsplash.com/photo-1551529834-525807d6b4f3?auto=format&fit=crop&q=80&w=400'
+    image: '/attached_assets/stock_images/waffle_cone_ice_crea_609a4ff8.jpg'
   },
   // Confitería
   {
@@ -39,7 +39,7 @@ export const PRODUCTS = [
     category: 'confiteria',
     price: 8500,
     unit: '500g',
-    image: 'https://images.unsplash.com/photo-1548848221-0c2e497ed557?auto=format&fit=crop&q=80&w=400'
+    image: '/attached_assets/stock_images/chocolate_chips_coco_9dc70ee2.jpg'
   },
   {
     id: '4',
@@ -47,7 +47,7 @@ export const PRODUCTS = [
     category: 'confiteria',
     price: 6000,
     unit: 'Paquete',
-    image: 'https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?auto=format&fit=crop&q=80&w=400'
+    image: '/attached_assets/stock_images/gummy_bears_candy_sw_c13b45a7.jpg'
   },
   // Aceites
   {
@@ -56,7 +56,7 @@ export const PRODUCTS = [
     category: 'aceites',
     price: 25000,
     unit: '3 Litros',
-    image: 'https://images.unsplash.com/photo-1474979266404-7cadd259c308?auto=format&fit=crop&q=80&w=400'
+    image: '/attached_assets/stock_images/vegetable_oil_bottle_1e8c9994.jpg'
   },
   // Panes
   {
@@ -65,7 +65,7 @@ export const PRODUCTS = [
     category: 'panes',
     price: 9000,
     unit: 'Paquete x 6',
-    image: 'https://images.unsplash.com/photo-1555677284-6a6f9716352d?auto=format&fit=crop&q=80&w=400'
+    image: '/attached_assets/stock_images/hamburger_buns_bread_53862365.jpg'
   },
   {
     id: '7',
@@ -73,7 +73,7 @@ export const PRODUCTS = [
     category: 'panes',
     price: 7500,
     unit: 'Paquete x 8',
-    image: 'https://images.unsplash.com/photo-1615550266023-e62a05cb3676?auto=format&fit=crop&q=80&w=400'
+    image: '/attached_assets/stock_images/hot_dog_buns_bread_ef246918.jpg'
   },
   // Lácteos
   {
@@ -82,7 +82,7 @@ export const PRODUCTS = [
     category: 'lacteos',
     price: 32000,
     unit: 'Kg',
-    image: 'https://images.unsplash.com/photo-1588647464039-3d047b8e1f57?auto=format&fit=crop&q=80&w=400'
+    image: '/attached_assets/stock_images/mozzarella_cheese_bl_1be2bd60.jpg'
   },
   // Pollo
   {
