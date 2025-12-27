@@ -28,8 +28,8 @@ export function CartDrawer({ children }: { children: React.ReactNode }) {
     }).format(totalPrice())}*`;
 
     const message = encodeURIComponent(header + body + footer);
-    // Replace with actual phone number if known, otherwise placeholder
-    window.open(`https://wa.me/573001234567?text=${message}`, "_blank");
+    // WhatsApp number for Grupo Carpo
+    window.open(`https://wa.me/573188134302?text=${message}`, "_blank");
   };
 
   return (
