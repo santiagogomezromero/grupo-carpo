@@ -277,8 +277,20 @@ function ProductFormDialog({
       unit: '',
       stock: 0,
       description: '',
+      image: '',
     }
   );
+
+  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        setFormData({ ...formData, image: event.target?.result as string });
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -350,6 +362,31 @@ function ProductFormDialog({
             placeholder="Litro"
             required
           />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="description">Descripción</Label>
+          <Input
+            id="description"
+            value={formData.description || ''}
+            onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+            placeholder="Descripción del producto"
+          />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="image">Imagen del Producto</Label>
+          {formData.image && (
+            <div className="mb-2 w-full h-32 bg-gray-100 rounded-md overflow-hidden">
+              <img src={formData.image} alt="preview" className="w-full h-full object-cover" />
+            </div>
+          )}
+          <Input
+            id="image"
+            type="file"
+            accept="image/*"
+            onChange={handleImageChange}
+            className="cursor-pointer"
+          />
+          <p className="text-xs text-muted-foreground">Carga una imagen para el producto</p>
         </div>
         <div className="flex gap-2 justify-end pt-4 border-t">
           <Button type="button" variant="outline" onClick={onCancel}>
