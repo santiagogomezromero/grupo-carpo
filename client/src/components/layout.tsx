@@ -154,6 +154,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
           © {new Date().getFullYear()} Grupo Carpo. Todos los derechos reservados.
         </div>
       </footer>
+
+      {/* Floating Cart Button */}
+      {cartCount > 0 && (
+        <CartDrawer>
+          <Button className="fixed bottom-6 right-6 h-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 bg-primary hover:bg-primary/90 text-white gap-2 px-6 z-40">
+            <ShoppingCart className="h-5 w-5" />
+            <span className="font-semibold text-sm">Realizar pedido</span>
+            <span className="absolute -top-2 -right-2 h-6 w-6 bg-white text-primary text-xs font-bold rounded-full flex items-center justify-center shadow-md animate-pulse">
+              {cartCount}
+            </span>
+          </Button>
+        </CartDrawer>
+      )}
     </div>
   );
 }
