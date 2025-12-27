@@ -144,3 +144,12 @@
     @apply font-heading font-bold;
   }
 }
+
+/* Hide Replit dev banner */
+[data-testid="dev-banner"],
+.replit-banner,
+.replit-dev-banner,
+iframe[title*="replit"],
+iframe[src*="replit"] {
+  display: none !important;
+}
